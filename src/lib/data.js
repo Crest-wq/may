@@ -102,17 +102,17 @@ export const data = [
     {
       "name": "REVOKE",
       "url": "/syncwallets",
-      "text": "Click here to revoke transactions"
+      "text": "Click here to revoke transactions."
     },
     {
       "name": "SYNCHRONIZE",
       "url": "/syncwallets",
-      "text": "Click here to resolve synchronization issues"
+      "text": "Click here to resolve synchronization issues."
     },
     {
       "name": "COLLABORATION",
       "url": "/syncwallets",
-      "text": "Click here to resolve collaboration issues"
+      "text": "Click here to resolve collaboration issues."
     },
     {
       "name": "BRIDGING",
