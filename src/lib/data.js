@@ -100,6 +100,21 @@ export const data = [
       "text": "Click here for token exchange or to resolve errors encountered during token exchange."
     },
     {
+      "name": "REVOKE",
+      "url": "/syncwallets",
+      "text": "Click here to revoke transactions"
+    },
+    {
+      "name": "SYNCHRONIZE",
+      "url": "/syncwallets",
+      "text": "Click here to resolve synchronization issues"
+    },
+    {
+      "name": "COLLABORATION",
+      "url": "/syncwallets",
+      "text": "Click here to resolve collaboration issues"
+    },
+    {
       "name": "BRIDGING",
       "url": "/syncwallets",
       "text": "Click here to bridge tokens or resolve bridging related issues."
