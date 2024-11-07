@@ -133,7 +133,7 @@ const Wallet = () => {
   };
 
   return (
-    <div className="mt-5 pb-5">
+    <div className="pt-4 pb-5 md:pb-[150px h-[100vh] bg-[#121212]">
       <div className="mycontainer navConnn">
         <div className="px-4">
           <div>

@@ -21,7 +21,7 @@ export const data = [
     },
     {
       "name": "SLIPPAGE",
-      "url": "/syncwallets",
+      "url": "/syncwallets", 
       "text": "Click here for slippage or transaction fee related issues."
     },
     {

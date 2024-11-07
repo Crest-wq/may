@@ -3,7 +3,7 @@ import { data } from "../../lib/data";
 
 const Solution = () => {
   return (
-    <div className="mt-4 pb-8">
+    <div className=" pb-8 bg-[#121212]">
       <div className="mycontainer">
         <div className="px-4">
           <div>

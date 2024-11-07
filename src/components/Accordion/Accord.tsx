@@ -2,7 +2,7 @@ import React from "react";
 
 const Accord = () => {
   return (
-    <div className="mt-4 pb-8" id="faq">
+    <div className="pb-8 bg-[#121212]" id="faq">
       <div className="mycontainer navConn">
         <div className="px-4">
           <div>
